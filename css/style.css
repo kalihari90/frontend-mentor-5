@@ -171,6 +171,10 @@ p {
 		padding: 3.2rem;
 	}
 
+	.card__overline {
+		margin-bottom: 2rem;
+	}
+
 	.card__summary {
 		gap: 3rem;
 	}
