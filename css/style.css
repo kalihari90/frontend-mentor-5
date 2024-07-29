@@ -105,10 +105,12 @@ p {
 	display: flex;
 	gap: 1.9rem;
 	align-items: center;
+	color: var(--green-400);
 }
 
 .card__prices--old {
 	text-decoration: line-through;
+	color: var(--gray-600);
 }
 
 .card__button {
@@ -172,6 +174,10 @@ p {
 	}
 
 	.card__overline {
+		margin-bottom: 2rem;
+	}
+
+	.card__title {
 		margin-bottom: 2rem;
 	}
 
