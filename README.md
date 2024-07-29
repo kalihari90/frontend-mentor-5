@@ -26,20 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/kalihari90/frontend-mentor-5)
+- Live Site URL: [Live](https://kalihari90.github.io/frontend-mentor-5/)
 
 ## My process
 
@@ -53,9 +45,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-This time I tried to use semantic tags like <article>, <main>, <footer>.
+This time I tried to use semantic tags like `<article>`, `<main>`, `<footer>`.
 I also put `display: grid;` & `place-content: center;`, `min-height: 100vh;` on the body for the centring purpose.
-I've learned how to use <picture> & <source> tags for images with 2 different file sources.
+I've learned how to use `<picture>` & `<source>` tags for images with 2 different file sources.
 
 ```html
 <picture class="card__img">
