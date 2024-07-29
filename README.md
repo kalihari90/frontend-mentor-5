@@ -51,8 +51,8 @@ I've learned how to use `<picture>` & `<source>` tags for images with 2 differen
 
 ```html
 <picture class="card__img">
-	<source srcset="/images/image-product-desktop.jpg" media="(min-width: 600px)" />
-	<img src="/images/image-product-mobile.jpg" alt="" />
+	<source srcset="./images/image-product-desktop.jpg" media="(min-width: 600px)" />
+	<img src="./images/image-product-mobile.jpg" alt="Photo of Gabrielle Essence Eau De Parfum" />
 </picture>
 ```
 
