@@ -1,0 +1,181 @@
+/* ~~~~~~~~~~~ COLORS ~~~~~~~~~~ */
+
+:root {
+	--green-400: rgb(60, 128, 103);
+	--green-800: rgb(26, 64, 50);
+	--white-400: rgb(255, 255, 255);
+	--white-800: rgb(242, 235, 227);
+	--blue-900: rgb(28, 35, 43);
+	--gray-600: rgb(108, 114, 137);
+}
+
+/* ~~~~~~~~~~~ GENERAL SETTINGS ~~~~~~~~~~ */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	/* 1 rem = 10 px */
+}
+
+body {
+	min-height: 100vh;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: var(--gray-600);
+	background-color: var(--white-800);
+	display: grid;
+	place-content: center;
+}
+
+img,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 2.3rem;
+}
+
+/* ~~~~~~~~~~~ REUSABLE COMPONENTS ~~~~~~~~~~ */
+
+.display {
+	font-family: "Fraunces", serif;
+	font-size: 3.2rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.container {
+	max-width: 34.3rem;
+	margin: 0 auto;
+}
+
+/* ~~~~~~~~~~~ CARD COMPONENT ~~~~~~~~~~ */
+
+.card {
+	background-color: var(--white-400);
+	border: none;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	/* margin-block: 2.4rem; */
+}
+
+.card__overline {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+
+.card__img {
+	max-width: 100%;
+	overflow: hidden;
+	object-fit: cover;
+	border: none;
+	border-radius: 1rem 1rem 0 0;
+	height: auto;
+}
+
+.card__content {
+	display: grid;
+	gap: 2.4rem;
+	padding: 2.4rem;
+}
+
+.card__title {
+	color: var(--blue-900);
+	margin-bottom: 0.5em;
+}
+
+.card__summary {
+	display: grid;
+	gap: 2rem;
+}
+
+.card__prices {
+	display: flex;
+	gap: 1.9rem;
+	align-items: center;
+}
+
+.card__prices--old {
+	text-decoration: line-through;
+}
+
+.card__button {
+	width: 100%;
+	padding-block: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.2rem;
+	border: none;
+	border-radius: 0.8rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+	font-family: inherit;
+	color: var(--white-400);
+	background-color: var(--green-400);
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.card__button .icon {
+	font-size: 1.6rem;
+}
+
+.card__button:hover,
+.card__button:active {
+	background-color: var(--green-800);
+}
+
+/* ~~~~~~~~~~~ FOOTER ~~~~~~~~~~ */
+
+.attribution {
+	padding-block: 2.4rem;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.attribution a {
+	text-decoration: none;
+	color: var(--gray-600);
+	font-weight: 700;
+	font-size: 1.4rem;
+}
+
+/* ~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~ */
+
+/* DESKTOP (> 1440px) 1440/16=90   */
+
+@media (min-width: 90em) {
+	.container {
+		max-width: 60rem;
+	}
+
+	.card {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card__content {
+		padding: 3.2rem;
+	}
+
+	.card__summary {
+		gap: 3rem;
+	}
+
+	.card__img {
+		border-radius: 0;
+	}
+}
